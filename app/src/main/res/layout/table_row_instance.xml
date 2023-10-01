@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/table_row_liearlayout_main"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"
+        android:background="@drawable/border"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:id="@+id/job_row"
+        android:text="Job"
+        android:textAlignment="center"
+        android:textColor="@color/table_head_text_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"
+        android:background="@drawable/border"
+        android:id="@+id/arrival_time_row"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="Arrival Time"
+        android:textAlignment="center"
+        android:textColor="@color/table_head_text_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"
+        android:background="@drawable/border"
+        android:id="@+id/burst_time_row"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="Burst Time"
+        android:textAlignment="center"
+        android:textColor="@color/table_head_text_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"
+        android:id="@+id/complete_time_row"
+        android:background="@drawable/border"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="Complete Time"
+        android:textAlignment="center"
+        android:textColor="@color/table_head_text_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"
+        android:background="@drawable/border"
+        android:id="@+id/turnaround_time_row"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="TurnAround Time"
+        android:textAlignment="center"
+        android:textColor="@color/table_head_text_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"
+        android:id="@+id/wait_time_row"
+        android:background="@drawable/border"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="Waiting Time"
+        android:textAlignment="center"
+        android:textColor="@color/table_head_text_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:id="@+id/response_time_row"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"
+        android:background="@drawable/border"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="Response Time"
+        android:textAlignment="center"
+        android:textColor="@color/table_head_text_color"
+        android:textSize="15dp" />
+
+</LinearLayout>
+
