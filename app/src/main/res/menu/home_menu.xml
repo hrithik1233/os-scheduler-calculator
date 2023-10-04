@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     >
-<item android:title="notes"
-
-    />
-    <item android:title="about"/>
+    <item android:title="notes"
+        android:id="@+id/menu_item_1"
+        />
+    <item android:title="about"
+        android:id="@+id/menu_item_2"
+        />
 </menu>

@@ -136,7 +136,7 @@
                             android:textSize="16dp" />
 
                         <EditText
-                            android:id="@+id/time_quotum"
+                            android:id="@+id/time_quantum"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginVertical="10dp"

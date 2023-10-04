@@ -1,48 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:orientation="vertical"
+    android:minWidth="60dp"
         android:padding="3px"
         android:background="@drawable/rounded_border"
 
       android:layout_marginVertical="5dp"
         android:layout_height="65dp">
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="match_parent"
             android:background="#D1CDCD"
             android:text="A"
+            android:minWidth="50dp"
+            android:maxWidth="150dp"
+            android:layout_gravity="center"
             android:id="@+id/process_name_instance"
             android:textColor="@color/black"
             android:textAlignment="center"
             android:textStyle="bold"
             android:textSize="20dp"
             android:layout_height="45dp"/>
-        <RelativeLayout
-            android:layout_width="50dp"
-            android:paddingHorizontal="10px"
+        <LinearLayout
+            android:layout_width="wrap_content"
 
+            android:orientation="horizontal"
             android:layout_height="15dp">
             <TextView
                 android:layout_width="wrap_content"
 
-                android:layout_alignParentStart="true"
+
+                android:layout_gravity="start"
                 android:textColor="@color/black"
                 android:id="@+id/process_start_instance"
                 android:textStyle="bold"
+                android:layout_marginHorizontal="1dp"
                 android:textSize="10dp"
+                android:text="0"
+
                 android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="wrap_content"
+                android:minWidth="25dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
             <TextView
                 android:layout_width="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="10dp"
 
-                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
                 android:textColor="@color/black"
                 android:textStyle="bold"
+
                 android:id="@+id/process_end_instance"
 
                 android:textSize="10dp"
                 android:layout_height="wrap_content"/>
-        </RelativeLayout>
+        </LinearLayout>
 
 
     </LinearLayout>

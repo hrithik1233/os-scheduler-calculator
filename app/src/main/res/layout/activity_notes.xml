@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Notes">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+
+                app:cardCornerRadius="5dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/archivo_black"
+                        android:paddingHorizontal="10dp"
+
+                        android:paddingTop="20dp"
+                        android:text="Process scheduling"
+
+                        android:textColor="#454545"
+                        android:textSize="25dp"
+                        app:drawableRightCompat="@drawable/gradient" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+
+                            android:drawableRight="@drawable/gradient"
+
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:text="What is process scheduling?\n \nProcess scheduling is the activity of the process manager that handles the "
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+
+                            android:layout_weight="1"
+                            android:src="@drawable/schedule" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:drawableRight="@drawable/gradient"
+                        android:fontFamily="@font/courier_prime"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="removal of the running process from the CPU and the selection of another process on the basis of a particular strategy.
+"
+
+
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:drawableRight="@drawable/gradient"
+                        android:fontFamily="@font/courier_prime"
+                        android:paddingHorizontal="10dp"
+
+                        android:text="🔴 Categories in
+Scheduling falls into one of two categories:"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:drawableRight="@drawable/gradient"
+                        android:fontFamily="@font/courier_prime"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/categories_of_scheduling"
+
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:drawableRight="@drawable/gradient"
+                        android:fontFamily="@font/courier_prime"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="🔵 There are three types of process schedulers.\n"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:drawableRight="@drawable/gradient"
+                        android:fontFamily="@font/courier_prime"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/types_of_schedulers"
+
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:drawableRight="@drawable/gradient"
+                        android:fontFamily="@font/courier_prime"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="🔺 Process Scheduling:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/courier_prime"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/process_schedule_algo"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:drawableRightCompat="@drawable/gradient" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:drawableRight="@drawable/gradient"
+                        android:fontFamily="@font/courier_prime"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="🔺 Some terminologies in procees scheduling:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/courier_prime"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/terminologies"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:drawableRightCompat="@drawable/gradient" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="\n---------------------\nFirst Come First Serve(FCFS)\n"
+                            android:textColor="@color/black"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="@string/fcfs_deiscription"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:drawableRightCompat="@drawable/gradient" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="\nExample:"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="\nProcess A,B,C\n\t \n\tArrival Time: [0, 2, 4]\n\tBurst Time: [2, 3, 6]\n\trespectively,\n     \n"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Gantt chart"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fcsf_gantt" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Process table"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginVertical="5dp"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="20dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fcfstb" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="\nAverage TurnAround:\n12/3=4\nAverage Waiting Time:\n1/3=0.333"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:textSize="40sp"
+                            android:textColor="@color/black"
+                            android:text="\n---------------------"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Shortest Job First(SJF)"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="\nShortest Job First (SJF) is a scheduling algorithm in which the process with the smallest execution time is selected for execution next. In SJF scheduling, the process queue is ordered by their burst time, and the process with the shortest burst time is selected for execution first."
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="\nProcess A,B,C\n\t \n\tArrival Time: [0, 2, 4]\n\tBurst Time: [5, 2, 3]\n\trespectively,\n     \n"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Gantt chart"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/sjf_gantt" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Process table"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginVertical="5dp"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="20dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/sjftb" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="\nAverage TurnAround:\n16/3=5.333\nAverage Waiting Time:\n6/3=2"
+                             android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:textSize="40sp"
+                            android:textColor="@color/black"
+                            android:text="\n---------------------\n"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Shortest  Remaining Time First(SRTF)"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Shortest Remaining Time First (SRTF), also known as Preemptive Shortest Job First (PSJF), is a scheduling algorithm where the process with the smallest remaining processing time is selected for execution next. Unlike non-preemptive Shortest Job First (SJF), SRTF can preempt a currently running process if a new process arrives with a shorter burst time."
+                             android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="\nProcess A,B,C\n\t \n\tArrival Time: [0, 2, 4]\n\tBurst Time: [5, 2, 1]\n\trespectively,\n     \n"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Gantt chart"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/srtf_gantt" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Process table"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginVertical="5dp"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="20dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/srtftb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="\nAverage TurnAround:\n11/3=3.667\nAverage Waiting Time:\n3/3=1"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:textSize="40sp"
+                            android:textColor="@color/black"
+                            android:text="\n---------------------\n"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Round Robin(RR)"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Round Robin (RR) is one of the simplest, oldest, and most widely used CPU scheduling algorithms in operating systems. It is a preemptive scheduling algorithm where each process is assigned a fixed time unit or time quantum. When a process's time quantum expires, it is moved to the back of the ready queue, and the next process in the queue is given the CPU."
+                             android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="\nProcess A,B,C\n\t \n\tArrival Time: [0, 2, 4]\n\tBurst Time: [2, 3, 6]\n\tTime quantum : 2\n\trespectively,\n     \n"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Gantt chart"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/rr_gantt" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Process table"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="20dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/rrtb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/gradient"
+                            android:fontFamily="@font/courier_prime"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="\nAverage TurnAround:\n13/3=4.333\nAverage Waiting Time:\n5/3=1.667"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
