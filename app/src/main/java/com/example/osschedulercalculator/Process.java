@@ -4,24 +4,25 @@ public class Process {
     String job;
     long arrivalTime;
     long burstTime;
-    long responseTime=-1;
+    long responseTime = -1;
     long completeTime;
     long turnArondTime;
-    long rank=0;
+    long rank = 0;
     long waitingTime;
-    public long remainingBurstTime=0;
+    public long remainingBurstTime = 0;
 
     public Process() {
     }
+
     public Process(String jobname) {
-        this.job=jobname;
+        this.job = jobname;
     }
 
     public Process(String job, long arrivalTime, long burstTime) {
         this.job = job;
         this.arrivalTime = arrivalTime;
         this.burstTime = burstTime;
-        remainingBurstTime=burstTime;
+        remainingBurstTime = burstTime;
     }
 
     public Process(String job, long arrivalTime, long burstTime, long completeTime) {
@@ -29,7 +30,7 @@ public class Process {
         this.arrivalTime = arrivalTime;
         this.burstTime = burstTime;
         this.completeTime = completeTime;
-        remainingBurstTime=burstTime;
+        remainingBurstTime = burstTime;
 
     }
 

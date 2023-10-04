@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                     outputLayout.setVisibility(View.VISIBLE);
                     output_algo_mention.setText(algo);
                     if (algo.equals("FCFS")) {
-                        if(processes.size()>0) {
+                        if (processes.size() > 0) {
 
 
                             long mx = 0;
@@ -253,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     if (algo.equals("SRJF")) {
-                        if(processes.size()>0) {
+                        if (processes.size() > 0) {
                             ArrayList<Process> result = new ArrayList<>();
                             long currentTime = processes.get(0).arrivalTime;
                             int processsize = processes.size();
@@ -442,7 +442,7 @@ public class MainActivity extends AppCompatActivity {
                                 Log.i("process", "\t\t" + currentProcess.job + "\t\t\t" + currentProcess.remainingBurstTime + "\t\t\t\t" + currentProcess.waitingTime);
                                 // Add the current process back to the queue if it's not completed
                                 if (currentProcess.remainingBurstTime > 0) {
-                                 queue.add(currentProcess);
+                                    queue.add(currentProcess);
                                 }
                             }
 
@@ -458,9 +458,6 @@ public class MainActivity extends AppCompatActivity {
 
 
                     }
-
-
-
 
 
                 } else {
@@ -547,6 +544,7 @@ public class MainActivity extends AppCompatActivity {
             return view1;
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.home_menu, menu);
@@ -557,15 +555,15 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id=item.getItemId();
-        switch (id){
+        int id = item.getItemId();
+        switch (id) {
             case R.id.menu_item_1:
-                Intent intent=new Intent(MainActivity.this,Notes.class);
+                Intent intent = new Intent(MainActivity.this, Notes.class);
                 startActivity(intent);
                 break;
             case R.id.menu_item_2:
-               Intent intent1=new Intent(MainActivity.this,About.class);
-               startActivity(intent1);
+                Intent intent1 = new Intent(MainActivity.this, About.class);
+                startActivity(intent1);
                 break;
         }
 
