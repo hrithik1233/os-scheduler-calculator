@@ -32,6 +32,11 @@ public class Notes extends AppCompatActivity {
             float y = event.getRawY();
 
             switch (event.getAction()) {
+                case MotionEvent.ACTION_UP:
+                    offsetX = x - cardView.getX();
+                    offsetY = y - cardView.getY();
+                    break;
+
                 case MotionEvent.ACTION_DOWN:
                     offsetX = x - cardView.getX();
                     offsetY = y - cardView.getY();

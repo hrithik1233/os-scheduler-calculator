@@ -88,7 +88,7 @@
                         android:layout_height="40dp"
                         android:layout_marginVertical="10dp"
                         android:background="@drawable/rounded_border"
-                        android:digits="0123456789 "
+                        android:inputType="number"
                         android:hint="eg:0 2 4 6"
                         android:paddingHorizontal="10dp"
                         android:textColor="@color/black"
@@ -114,7 +114,7 @@
                             android:layout_marginVertical="10dp"
                             android:background="@drawable/rounded_border"
                             android:hint="eg:0 2 4 6"
-                            android:digits="0123456789 "
+                            android:inputType="number"
                             android:paddingHorizontal="10dp"
                             android:textColor="@color/black"
                             android:textColorHint="@color/hint_color_grey_light" />

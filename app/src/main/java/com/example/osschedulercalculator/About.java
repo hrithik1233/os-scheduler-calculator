@@ -13,7 +13,8 @@ import android.widget.TextView;
 
 public class About extends AppCompatActivity {
 
-    LinearLayout redirect;
+    LinearLayout redirect,feedback;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -21,11 +22,27 @@ public class About extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
         redirect = findViewById(R.id.mygitlink);
+        feedback = findViewById(R.id.feedback);
         redirect.setOnClickListener(view -> {
             String ur =  getResources().getString(R.string.githuburl);
             Uri url = Uri.parse(ur);
             Intent intent = new Intent(Intent.ACTION_VIEW, url);
             startActivity(intent);
+
+        });
+        feedback.setOnClickListener(view -> {
+            String[] recipients = {getResources().getString(R.string.mygmail)};
+            String subject = "To about Os-schedule-calculator";
+            String message = "";
+
+            Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+            emailIntent.setData(Uri.parse("mailto:"));
+            emailIntent.putExtra(Intent.EXTRA_EMAIL, recipients);
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+            emailIntent.putExtra(Intent.EXTRA_TEXT, message);
+
+
+                startActivity(emailIntent);
 
         });
     }
