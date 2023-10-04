@@ -7,6 +7,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.View;
@@ -19,6 +20,9 @@ public class Notes extends AppCompatActivity {
     private float offsetX, offsetY;
     private ScaleGestureDetector scaleGestureDetector;
     private float scaleFactor = 0.5f;
+    int screenHeight=0;
+    int screenWidth=0;
+
 
     @SuppressLint({"MissingInflatedId", "ClickableViewAccessibility"})
     @Override
@@ -26,10 +30,15 @@ public class Notes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes);
         cardView = findViewById(R.id.notesCardView);
+        screenWidth = getResources().getDisplayMetrics().widthPixels;
+       screenHeight = getResources().getDisplayMetrics().heightPixels;
+
         cardView.setOnTouchListener((v, event) -> {
 
             float x = event.getRawX();
             float y = event.getRawY();
+            float t= (float) ((float)screenWidth/1.2);
+
 
             switch (event.getAction()) {
                 case MotionEvent.ACTION_UP:
@@ -42,8 +51,13 @@ public class Notes extends AppCompatActivity {
                     offsetY = y - cardView.getY();
                     break;
                 case MotionEvent.ACTION_MOVE:
-                    cardView.setX(x - offsetX);
-                    cardView.setY(y - offsetY);
+                    Log.i("process", ""+ t);
+                   Log.i("process",cardView.getX()+" "+cardView.getY());
+                    if((x - offsetX)<t&&(x - offsetX)>-t){
+                        cardView.setX(x - offsetX);
+                        cardView.setY(y - offsetY);
+                    }
+
                     break;
                 default:
                     return false;

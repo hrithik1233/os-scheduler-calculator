@@ -17,7 +17,7 @@
         app:itemIconTint="@color/white"
         android:id="@+id/toolbar"
 
-        app:title="os scheduler calculator"
+        app:title="Os Scheduler Calculator"
         app:titleTextColor="@color/white" />
 
     <ScrollView
