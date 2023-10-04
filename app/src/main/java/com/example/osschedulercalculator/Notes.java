@@ -26,19 +26,7 @@ public class Notes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes);
         cardView = findViewById(R.id.notesCardView);
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        WindowManager windowManager = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
-        if (windowManager != null) {
-            windowManager.getDefaultDisplay().getMetrics(displayMetrics);
-
-            int screenWidth = displayMetrics.widthPixels;
-            int screenHeight = displayMetrics.heightPixels;
-
-
-        }
-
         cardView.setOnTouchListener((v, event) -> {
-
 
             float x = event.getRawX();
             float y = event.getRawY();
